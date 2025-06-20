@@ -35,24 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // ▼▼▼ ARTIKEL BARU: Template artikel dengan format Spintax ▼▼▼
         const spintaxArticleTemplate = `
-            <p>{Welcome to|Explore|Discover} our {delicious|amazing|tasty} recipe for <strong>${capitalizedTermForArticle}</strong>. {This is the perfect dish|You'll love this recipe} for {any occasion|a weeknight dinner|a special meal}. {It's easy to make|Simple and quick|A delightful treat}, and {packed with flavor|absolutely delicious|sure to impress}.</p>
-            <h3>Ingredients</h3>
-            <ul>
-                <li>{2 cups|500g|1 lb} of {flour|chicken|beef|tofu}</li>
-                <li>{1 cup|250ml|8 oz} of {milk|water|broth}</li>
-                <li>{2|3|4} {eggs|onions|cloves of garlic}</li>
-                <li>{1 tsp|1 tbsp} of {salt|sugar|paprika}</li>
-                <li>{A handful of|A pinch of} {fresh herbs|spices}</li>
-            </ul>
-            <h3>Instructions</h3>
-            <ol>
-                <li>{First, preheat your oven to|Start by heating a pan on medium heat with} {350°F (175°C)|a drizzle of oil}.</li>
-                <li>{In a large bowl, combine the|Mix together the} dry ingredients.</li>
-                <li>{Gradually add the|Whisk in the} wet ingredients until {smooth|well combined}.</li>
-                <li>{Pour the mixture into|Transfer the mixture to} a baking dish and {bake for 30 minutes|cook for 15-20 minutes}, or until golden brown.</li>
-                <li>{Let it cool before serving|Serve immediately} with your favorite garnish.</li>
-            </ol>
-            <p>We {hope|trust} you {enjoy|love} this {fantastic|wonderful|delicious} <strong>${capitalizedTermForArticle}</strong> recipe. {Feel free|Don't hesitate} to {share it with your friends|leave a comment below}. {Happy cooking|Enjoy your meal|Bon appétit}!</p>
+            <p>{Welcome to a world of flavor!|Ready for a culinary adventure?|Looking for your next favorite dish?} {Exploring new recipes is the perfect way to bring excitement to your kitchen.|There's nothing better than the aroma of a home-cooked meal.|Let's create something delicious together!} Today, we're spotlighting a truly special recipe for <strong>${capitalizedTermForArticle}</strong>. {It's a dish that's sure to impress|This recipe is a guaranteed winner|Prepare to fall in love with this amazing meal}.</p>
+            <p style="text-align:center; font-weight:bold; font-size:1.2rem; color:#333;">Ready to cook? Click the button above to get the complete, printable, and step-by-step recipe card!</p>
+            <p>We {hope|trust} you {enjoy|love} this {fantastic|wonderful|delicious} <strong>${capitalizedTermForArticle}</strong> recipe. {Feel free to|Don't hesitate} to {share it with your friends|leave a comment below}. {Happy cooking|Enjoy your meal|Bon appétit}!</p>
         `;
 
         // Proses Spintax dan tampilkan hasilnya
