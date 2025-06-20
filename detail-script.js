@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
         // ▼▼▼ ARTIKEL BARU: Template artikel dengan format Spintax ▼▼▼
         const spintaxArticleTemplate = `
             <p>{Welcome to a world of flavor!|Ready for a culinary adventure?|Looking for your next favorite dish?} {Exploring new recipes is the perfect way to bring excitement to your kitchen.|There's nothing better than the aroma of a home-cooked meal.|Let's create something delicious together!} Today, we're spotlighting a truly special recipe for <strong>${capitalizedTermForArticle}</strong>. {It's a dish that's sure to impress|This recipe is a guaranteed winner|Prepare to fall in love with this amazing meal}.</p>
-            <p style="text-align:center; font-weight:bold; font-size:1.2rem; color:#333;">Ready to cook? Click the button above to get the complete, printable, and step-by-step recipe card!</p>
             <p>We {hope|trust} you {enjoy|love} this {fantastic|wonderful|delicious} <strong>${capitalizedTermForArticle}</strong> recipe. {Feel free to|Don't hesitate} to {share it with your friends|leave a comment below}. {Happy cooking|Enjoy your meal|Bon appétit}!</p>
+            <p>Ready to cook? Click the button above to get the complete, printable, and step-by-step recipe card!</p>
         `;
 
         // Proses Spintax dan tampilkan hasilnya
