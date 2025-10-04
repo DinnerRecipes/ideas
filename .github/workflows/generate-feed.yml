@@ -79,15 +79,15 @@ jobs:
               description_template = random.choice(descriptions_templates)
               description_text = description_template.replace('%keyword%', keyword.title())
               
-              url_keyword = keyword.replace(' ', '-').lower()
-              link = f"https://{domain}/detail.html?q={url_keyword}"
-
               # --- PERUBAHAN DIMULAI DI SINI ---
-              # Gabungkan prefix dengan keyword untuk kueri gambar
+              # URL-encode keyword untuk menangani karakter spesial (seperti spasi, &, ', é) dengan aman.
+              # Menggunakan quote_plus() yang mengubah spasi menjadi '+' adalah standar untuk query string URL.
+              encoded_keyword_for_link = urllib.parse.quote_plus(keyword.lower())
+              link = f"https://{domain}/detail.html?q={encoded_keyword_for_link}"
+              
+              # Bagian untuk URL gambar sudah benar menggunakan quote()
               image_query = f"{random_prefix} {keyword}"
-              # Encode kueri gambar yang sudah digabung
               encoded_image_query = urllib.parse.quote(image_query)
-              # Gunakan kueri yang sudah di-encode dalam URL gambar
               image_url = f"https://tse1.mm.bing.net/th?q={encoded_image_query}&w=800&h=1200&c=7&rs=1&p=0"
               # --- PERUBAHAN SELESAI ---
               
